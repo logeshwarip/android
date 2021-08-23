@@ -14,8 +14,6 @@
         android:id="@+id/search_view"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:autofillHints="Search Shows"
-        android:clickable="false"
         android:layout_toLeftOf="@+id/search"/>
     <Button
         android:id="@+id/search"
@@ -33,5 +31,13 @@
         android:id="@+id/recyclerView"
         android:layout_width="match_parent"
         android:layout_height="match_parent" />
+
+    <TextView
+        android:id="@+id/no_data"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/no_data"
+        android:textSize="@dimen/_15sdp"
+        android:gravity="center"/>
 
 </LinearLayout>

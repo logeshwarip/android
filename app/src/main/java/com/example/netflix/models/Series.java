@@ -5,7 +5,7 @@ import com.google.gson.annotations.SerializedName;
 
 import retrofit2.http.PUT;
 
-public class Shows {
+public class Series {
 
     @SerializedName("id")
     @Expose
@@ -34,7 +34,22 @@ public class Shows {
     @SerializedName("summary")
     @Expose
     private String summary;
-
+    @SerializedName("season")
+    @Expose
+    private Integer season;
+    @SerializedName("airdate")
+    @Expose
+    private String airdate;
+    @SerializedName("airtime")
+    @Expose
+    private String airtime;
+    @SerializedName("airstamp")
+    @Expose
+    private String airstamp;
+    @SerializedName("runtime")
+    @Expose
+    private String runtime;
+    private String imageurl;
 
     public Integer getId() {
         return id;
@@ -106,6 +121,54 @@ public class Shows {
 
     public void setSummary(String summary) {
         this.summary = summary;
+    }
+
+    public Integer getSeason() {
+        return season;
+    }
+
+    public void setSeason(Integer season) {
+        this.season = season;
+    }
+
+    public String getAirdate() {
+        return airdate;
+    }
+
+    public void setAirdate(String airdate) {
+        this.airdate = airdate;
+    }
+
+    public String getAirtime() {
+        return airtime;
+    }
+
+    public void setAirtime(String airtime) {
+        this.airtime = airtime;
+    }
+
+    public String getAirstamp() {
+        return airstamp;
+    }
+
+    public void setAirstamp(String airstamp) {
+        this.airstamp = airstamp;
+    }
+
+    public String getRuntime() {
+        return runtime;
+    }
+
+    public void setRuntime(String runtime) {
+        this.runtime = runtime;
+    }
+
+    public String getImageurl() {
+        return imageurl;
+    }
+
+    public void setImageurl(String imageurl) {
+        this.imageurl = imageurl;
     }
 
     public class ImageShow {

@@ -2,7 +2,10 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal">
+    android:orientation="horizontal"
+    android:layout_margin="@dimen/_10sdp"
+    android:gravity="center_horizontal"
+    android:background="@drawable/round_cornered">
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
@@ -15,37 +18,35 @@
             android:layout_height="wrap_content"
             android:textColor="@color/black"
             android:textSize="@dimen/_20sdp"
-            android:textStyle="bold"
-            android:text="@string/app_name"/>
+            android:textStyle="bold" />
         <TextView
             android:id="@+id/description"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/black"
-            android:text="@string/app_name"/>
+            android:textSize="@dimen/_12sdp"/>
         <ImageView
-            android:id="@+id/imgcar"
+            android:id="@+id/thumnailImage"
             android:layout_width="@dimen/_150sdp"
             android:layout_height="@dimen/_150sdp"
             android:src="@drawable/netflix_splash"/>
     </LinearLayout>
     <LinearLayout
-        android:layout_width="0dp"
-        android:layout_weight="1"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_margin="@dimen/_5sdp"
         android:gravity="end"
         android:orientation="vertical">
         <Spinner
             android:id="@+id/season_spinner"
-            android:layout_width="fill_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:prompt="@string/app_name" />
+            android:layout_marginTop="@dimen/_5sdp"/>
         <TextView
             android:id="@+id/season"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:textColor="@color/black"
-            android:text="@string/app_name"/>
+            android:textStyle="italic"
+            android:textSize="@dimen/_12sdp"/>
     </LinearLayout>
 </LinearLayout>

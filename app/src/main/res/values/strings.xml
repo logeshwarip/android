@@ -1,7 +1,9 @@
 <resources>
     <string name="app_name">NetFlix</string>
     <string name="episode">Episodes</string>
-    <string name="shows_error">Failed</string>
+    <string name="series_error">Failed</string>
     <string name="no_data">No data available</string>
     <string name="search">Search</string>
+    <string name="search_series">Search Series</string>
+    <string name="internet_connection">Please connect internet connection</string>
 </resources>

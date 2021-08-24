@@ -57,7 +57,6 @@ public class CustomAdapter extends RecyclerView.Adapter<CustomAdapter.MyViewHold
         }else {
             Picasso.with(mContext).load(R.drawable.netflix_splash).into(holder.imgView);
         }
-
       holder.episode.setOnClickListener(new View.OnClickListener() {
           @Override
           public void onClick(View v) {
